@@ -62,3 +62,33 @@ form input {
   width :100%;
   margin-bottom :20px;
 }
+
+/* show */
+
+.profile_image {
+  float :right;
+}
+
+.gravatar {
+  margin-right :10px;
+}
+
+.row {
+  overflow :hidden;
+}
+
+/* form */
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
