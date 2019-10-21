@@ -79,6 +79,10 @@ form input {
 
 /* form */
 
+form {
+  margin-bottom :30px;
+}
+
 .checkbox {
   margin-top: -10px;
   margin-bottom: 10px;
@@ -91,4 +95,20 @@ form input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding-left: 200px;
+    padding-bottom: 10px;
+  }
+}
+
+.pagination {
+  margin-left :120px;
 }
