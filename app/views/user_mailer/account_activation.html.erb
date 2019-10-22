@@ -1,0 +1,8 @@
+<h1>メール認証</h1>
+
+<p>
+  こんにちは<%= @user.name %>さん
+</p>
+<p>認証を完了するには以下のリンクをクリックしてしてください</p>
+
+<%= link_to "認証", edit_account_activation_url(@user.activation_token, email: @user.email) %>
