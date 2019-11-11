@@ -21,6 +21,7 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     assert_equal 1, ActionMailer::Base.deliveries.size
     assert_not flash.empty?
     assert_redirected_to root_url
+    
     # パスワード再設定フォームのテスト
     user = assigns(:user)
     # メールアドレスが無効

@@ -22,10 +22,5 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
   
-  test "should redirect home when not login" do
-    get root_path
-    assert_not flash.empty?
-    assert_redirected_to login_url
-  end
 
 end
