@@ -1,0 +1,15 @@
+one:
+  follower: Haruki
+  followed: Misato
+
+two:
+  follower: Haruki
+  followed: Tsukada
+
+three:
+  follower: Misato
+  followed: Harukis
+
+four:
+  follower: Taichi
+  followed: Haruki
