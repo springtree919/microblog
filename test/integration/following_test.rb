@@ -6,6 +6,7 @@ class FollowingTest < ActionDispatch::IntegrationTest
     @user = users(:Haruki)
     log_in_as(@user)
     @other = users(:Taichi)
+    ActionMailer::Base.deliveries.clear
   end
 
   test "following page" do
@@ -38,5 +39,15 @@ class FollowingTest < ActionDispatch::IntegrationTest
     assert_difference '@user.following.count', -1 do
       delete relationship_path(relationship)
     end
+  end
+  
+  test "should send notofication email" do
+    post relationships_path, params: {followed_id: @other.id}
+    assert_equal 1, ActionMailer::Base.deliveries.size
+  end
+  
+  test "should not send notification email" do
+    post relationships_path, params: {followed_id: @user.id}
+    assert_equal 0, ActionMailer::Base.deliveries.size
   end
 end

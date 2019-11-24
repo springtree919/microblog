@@ -14,5 +14,10 @@
     <%= f.label :password_confirmation, "パスワード（確認）" %>
     <%= f.password_field :password_confirmation, class: "form_control" %>
     
-    <%= f.submit "Edit my account", class: "btn btn-primary" %>
+    <%= f.label :follow_notification, class:"checkbox inline" do %>
+      <%= f.check_box :follow_notification %>
+      <span>Send email when other users follow or unfollow you</span>
+    <% end %>
+    
+    <%= f.submit "保存", class: "btn btn-primary" %>
 <% end %>

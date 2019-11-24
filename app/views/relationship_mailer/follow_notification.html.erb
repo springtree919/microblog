@@ -1,0 +1,8 @@
+<h3>こんにちは<%= @user.name%>さん</h3>
+
+<p>
+  <%= @follower.name %>さんがあなたをフォローしました。
+  以下のリンクをから確認しましょう！
+</p>
+
+<%= link_to "Follower_list",  followers_user_url(@user) %>

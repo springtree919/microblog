@@ -5,6 +5,7 @@ Haruki:
   admin: true
   activated: true
   activated_at: <%= Time.zone.now %>
+  follow_notification: false
   
 Misato:
   name: Misato Example
@@ -12,6 +13,7 @@ Misato:
   password_digest: <%= User.digest("password")%>
   activated: true
   activated_at: <%= Time.zone.now %>
+  follow_notification: false
   
 Tsukada:
   name: Tsukada example
@@ -19,6 +21,7 @@ Tsukada:
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>
+  follow_notification: false
 
 Taichi:
   name: Taichi example
@@ -26,6 +29,7 @@ Taichi:
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>
+  follow_notification: true
 
 <% 30.times do |n| %>
 user_<%= n %>:
