@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  before_action :not_looged_in_user, only: [:new, :create]
+
   def new
   end
   
@@ -23,6 +25,6 @@ class SessionsController < ApplicationController
   
   def destroy
     log_out if logged_in?
-    redirect_to signup_url
+    redirect_to root_url
   end
 end

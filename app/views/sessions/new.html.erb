@@ -1,7 +1,7 @@
-<h1>ログイン</h1>
+<h1 class="title">Login</h1>
 
 <div class="row">
-  <div class="col-md-4 col-md-offset-4">
+  <div class="col-md-4 col-md-offset-4 login_form">
     <%= form_for(:session, url: login_path) do |f| %>
     
       <%= f.label :email, "メールアドレス" %>
@@ -16,7 +16,8 @@
         <span>ログインを記憶する</span>
       <% end %> 
         
-      <%= f.submit "ログイン", class: "btn btn-primary" %>
+      <%= f.submit "login", class: "btn btn-default" %>
     <% end %>
+    <h4>もしくは<%= link_to "新規登録", signup_path %></h4>
   </div>
 </div>

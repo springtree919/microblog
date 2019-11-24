@@ -6,12 +6,20 @@
 .container{
   margin :0;
   padding :0;
+  
 }
 
 h1 {
   text-align :center ;
 }
 
+.title{
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.name {
+  font-family: 'Vollkorn', serif;
+}
 /* header */
 
 .container {
@@ -34,6 +42,10 @@ h1 {
   padding-top: 9px;
 }
 
+#logo{
+  color: black;
+  font-family: 'Caveat', cursive;
+}
 /* footer */
 
 footer {
@@ -84,9 +96,6 @@ form input {
 
 /* form */
 
-form {
-  margin-bottom :30px;
-}
 
 .checkbox {
   margin-top: -10px;
@@ -106,6 +115,11 @@ form {
   width: auto;
   margin-left: 0px;
 }
+
+.login_form h4{
+  padding-top: 20px;
+}
+
 
 /* Users index */
 
@@ -175,6 +189,7 @@ span.picture {
 .user_info {
   h1 {
     display: inline-block;
+    padding-left: 40px ;
   }
   span:nth-child(3) {
     margin-left: 40px;
@@ -232,4 +247,39 @@ span.picture {
 
 .users.follow {
   padding: 0;
+}
+
+/* edit */
+
+.gravatar_edit {
+  padding-top: 30px ;
+}
+
+/* footer */
+
+.footer-about a{
+  color: gray;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  &:hover {
+    color: black;
+  }
+}
+
+/* about */
+
+.about h1{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 90px;
+}
+
+.description h2{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.join {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 40px;
 }

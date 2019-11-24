@@ -9,4 +9,10 @@ class ApplicationController < ActionController::Base
         redirect_to root_url
       end
   end
+  
+  def not_looged_in_user
+    if logged_in?
+      redirect_to home_url
+    end
+  end
 end

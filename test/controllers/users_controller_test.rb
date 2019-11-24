@@ -30,4 +30,10 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     get followers_user_path(@user)
     assert_redirected_to root_url
   end
+  
+  test "should not access signup when loggede in" do
+    log_in_as @user
+    get signup_path
+    assert_redirected_to home_url
+  end
 end
