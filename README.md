@@ -1,24 +1,23 @@
-# README
+# Microblog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+we can talk on Microblog.
+This is an application based on Rails tutorial.
+But Microblog has functions that isn't icluded on tutorial.
 
-Things you may want to cover:
+# Features
 
-* Ruby version
+Microblog has many functions that is necessary for development web application.
 
-* System dependencies
+# URL
+https://polar-sierra-35103.herokuapp.com/
 
-* Configuration
 
-* Database creation
+# Author
 
-* Database initialization
+ Haruki Hayashi
+ springtree919@icloud.com
 
-* How to run the test suite
+# License
 
-* Services (job queues, cache servers, search engines, etc.)
+"Microblog" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
 
-* Deployment instructions
-
-* ...
