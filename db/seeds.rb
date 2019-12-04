@@ -1,5 +1,5 @@
 User.create!(name:  "Haruki",
-             email: "springtree919@icloud.com",
+             email: "user@example.com",
              password:              "password",
              password_confirmation: "password",
              admin: true,
